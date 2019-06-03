@@ -12,10 +12,16 @@ import pandas as pd
 data_ies = pd.read_csv("Desktop\Projeto - Pandas\Dados\ies.csv", sep="|", encoding="ANSI")
 #data_ies
 
-data_ies = pd.DataFrame(data_ies, columns=['CO_IES',  'NO_IES',  'SGL_IES', 'DS_CATEGORIA_ADMINISTRATIVA', 
+#Criando Data Frame com as colunas necessárias
+data_ies_colunas = pd.DataFrame(data_ies, columns=['CO_IES',  'NO_IES',  'SGL_IES', 'DS_CATEGORIA_ADMINISTRATIVA', 
                                            'DS_ORGANIZACAO_ACADEMICA', 'NO_MUNICIPIO_IES', 'SGL_UF_IES'])
 
 data_ies
+
+# Plotando um gráfico
+
+data_ies_colunas.plot(kind='bar', figsize=(11,5), rot=0, color='green')
+plt.show()
 
 
 # In[11]:
