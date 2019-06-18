@@ -1,5 +1,0 @@
-Base de dados 
-Extraida do site http://portal.inep.gov.br/microdados
-Censo da Educação Superior ano 2017
-- Aluno
-- Curso
